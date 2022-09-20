@@ -6,10 +6,10 @@ class Rectangle:
     """Rep a rectangle.
 
     Attributes:
-        n_instance (int): The number of Rectangle instances.
+        number_of_instances (int): The number of Rectangle instances.
     """
 
-    n_instance = 0
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
@@ -18,7 +18,7 @@ class Rectangle:
             width (int): The width of the new rectangle.
             height (int): The height of the new rectangle.
         """
-        type(self).n_instance += 1
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -81,5 +81,5 @@ class Rectangle:
 
     def __del__(self):
         """Print a message for every deletion of a Rectangle."""
-        type(self).n_instance -= 1
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
