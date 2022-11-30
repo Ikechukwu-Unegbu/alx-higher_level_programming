@@ -1,1 +1,2 @@
-Alx js
+# 0x12. Javascript - Warm up
+ALX SOFTWARE ENGINEERING TASK
