@@ -1,10 +1,13 @@
 #!/usr/bin/python3
-"""hbtn status endpoint call"""
+"""
+Script that fetches https://intranet.hbtn.io/status
+"""
+import requests
 
 if __name__ == '__main__':
-    import requests
-
-    res = requests.get('https://intranet.hbtn.io/status')
-    print('Body response:')
-    print('\t- type: {}'.format(type(res.text)))
-    print('\t- content: {}'.format(res.text))
+    url = "https://intranet.hbtn.io/status"
+    r = requests.get(url)
+    text = r.text
+    print("Body response:")
+    print("\t- type: {}".format(type(text)))
+    print("\t- content: {}".format(text))
